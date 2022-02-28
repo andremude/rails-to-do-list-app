@@ -1,0 +1,64 @@
+  <h1 class="index-title">My Tasks</h1>
+
+<div class="container">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Deadline</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @tasks.each do |task| %>
+        <tr>
+          <td><%= link_to task.title, task, class:"title-btn" %></td>
+          <br>
+          <%# <td><%= task.description</td> %>
+          <td>
+
+            <% if task.status == "Not Started" %>
+              <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+            <% end %>
+
+            <% if task.status == "In Progress" %>
+              <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            <% end %>
+
+            <% if task.status == "Completed" %>
+              <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            <% end %>
+          </td>
+          <td><%= task.deadline %></td>
+          <td>
+            <svg width="30px" height="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="-14 0 36 18" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <%= link_to 'Edit', edit_task_path(task), class:"edit-btn" %>
+          </td>
+          <td>
+          <svg width="30px" height="16px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="-14 0 34 18" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          <%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' }, class:"delete-btn" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+    <%= link_to 'New Task', new_task_path, class:"new-task-btn"%>
+</div>
+
+  <p id="notice"><%= notice %></p>

@@ -1,0 +1,8 @@
+<h1 class=edit-title>Edit Task</h1>
+
+<%= render 'form', task: @task %>
+
+<div class="home-task-btn">
+  <%= link_to 'Home', tasks_path %> |
+  <%= link_to 'Task', @task %>
+</div>

@@ -1,0 +1,54 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-content {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form {
+  margin: 5px 20px;
+
+}
+
+.edit-title {
+  margin-top: 50px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: center;
+  display: flex;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(6, 9, 155);
+  color: white;
+  text-decoration: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+body, p, ol, ul, td, textarea, label {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+textarea {
+  font-family: inherit;
+}
