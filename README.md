@@ -1,27 +1,49 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Rails To-Do List
 
-Things you may want to cover:
+## Tech Stack
+   * ruby '2.7.4'
+   * rails '6.1.4.6'
+   * yarn '1.22.19'
+   * PostgreSQL '12.9'
 
-* Ruby version
+## System dependencies
+   * "@rails/actioncable": "^6.0.0"
+   * "@rails/activestorage": "^6.0.0"
+   * "@rails/ujs": "^6.0.0"
+   * "@rails/webpacker": "5.4.3"
+   * "turbolinks": "^5.2.0"
+   * "webpack": "^4.46.0"
+   * "webpack-cli": "^3.3.12"
 
-* System dependencies
+## Setup
 
-* Configuration
+Clone repository: 
 
-* Database creation
+`git@github.com:andremude/rails-to-do-list-app.git`
 
-* Database initialization
+Install dependencies: 
 
-* How to run the test suite
+`bundle install`
+`yarn install`
 
-* Services (job queues, cache servers, search engines, etc.)
+Database management:
 
-* Deployment instructions
+`rails db:create
+  
+rails db:migrate
+  
+rails db:seed`
+  
+Run server
 
-* ...
+  `rails server`
+
+## RSpec Testing
+
+run `bundle exec rspec`
+
 
 ![new_task](https://user-images.githubusercontent.com/71613801/158030505-f27fcab1-51fb-4a4f-b2c4-267885c0f73e.png)
 
