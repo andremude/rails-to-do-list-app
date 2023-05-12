@@ -1,10 +1,10 @@
 # README - Rails To-Do List
 
 ## Tech Stack
-   * ruby '2.7.4'
-   * rails '6.1.4.6'
-   * yarn '1.22.19'
-   * postgreSQL '12.9'
+   * Ruby '2.7.4'
+   * Rails '6.1.4.6'
+   * Yarn '1.22.19'
+   * PostgreSQL '12.9'
 
 ## System dependencies
    * "@rails/actioncable": "^6.0.0"
@@ -19,37 +19,37 @@
 
 Clone repository: 
 
-`git@github.com:andremude/rails-to-do-list-app.git`
+  `git@github.com:andremude/rails-to-do-list-app.git`
 
 <br>
 
 Install dependencies: 
 
-`bundle install`
+  `bundle install`
 
-`yarn install`
+  `yarn install`
 
 <br>
 
 Database management:
 
-`rails db:create`
+  `rails db:create`
 
-`rails db:migrate`
+  `rails db:migrate`
 
-`rails db:seed`
+  `rails db:seed`
 
 <br>  
 
 Run server
 
-`rails server`
+  `rails server`
 
 <br>
 
 ## RSpec Testing
 
-run `bundle exec rspec`
+  run `bundle exec rspec`
 
 <br>
 
