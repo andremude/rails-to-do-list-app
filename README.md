@@ -21,14 +21,14 @@ Clone repository:
 
 `git@github.com:andremude/rails-to-do-list-app.git`
 
-
+<br>
 Install dependencies: 
 
 `bundle install`
 
 `yarn install`
 
-
+<br>
 Database management:
 
 `rails db:create`
@@ -37,17 +37,17 @@ Database management:
 
 `rails db:seed`
 
-  
+<br>  
 Run server
 
 `rails server`
 
-
+<br>
 ## RSpec Testing
 
 run `bundle exec rspec`
 
-
+<br>
 ## Screenshots
 
 ![new_task](https://user-images.githubusercontent.com/71613801/158030505-f27fcab1-51fb-4a4f-b2c4-267885c0f73e.png)
