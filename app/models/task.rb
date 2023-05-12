@@ -1,4 +1,6 @@
 class Task < ApplicationRecord
+  validates :title, presence: true
+  validates :description, presence: true
 
   enum status: {
     "Not Started": 0,
