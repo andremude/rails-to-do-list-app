@@ -51,13 +51,13 @@ Run server
   
   In Gemfile add: 
   
-  ``group :development, :test do
+ ```group :development, :test do
   
     gem 'rspec-rails', '~> 6.0.0'
   
-  gem 'rails-controller-testing'
+    gem 'rails-controller-testing'
   
-  end``
+  end```
 
   In terminal: 
   
