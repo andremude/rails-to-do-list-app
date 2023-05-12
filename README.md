@@ -48,6 +48,13 @@ Run server
 <br>
 
 ## RSpec Testing
+  
+  Gemfile: 
+  
+  group :development, :test do
+    gem 'rspec-rails', '~> 6.0.0'
+    gem 'rails-controller-testing'
+  end
 
   run `bundle exec rspec`
 
